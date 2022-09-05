@@ -8,6 +8,8 @@ body {
   font-family: "McLaren", cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  overflow-x: hidden;
 }
 
 code {
@@ -34,16 +36,22 @@ code {
 }
 .notes-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr;
+
+  gap: 2rem;
 }
+
 .note {
-  max-width: 15rem;
+  width: 24rem;
   padding: 10px;
   margin: 20px 40px;
   border-radius: 5px;
   box-shadow: 3px 3px 10px 0 #ccc;
+  transition: all ease 1ms;
 }
-
+.note:hover {
+  transform: scale(1.04);
+}
 .note h3 {
   font-size: 18px;
   font-weight: 600;
@@ -52,4 +60,49 @@ code {
 .note p {
   font-size: 16px;
   font-weight: 100;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.input-box,
+input[type="text"]:focus {
+  border: none;
+  font-family: inherit;
+  font-size: 1.4rem;
+  display: block;
+  padding: 0.7rem 0.9rem;
+  font-weight: 500;
+  color: rgb(152, 151, 151);
+  width: 90%;
+}
+
+.note.input {
+  width: 40rem;
+  margin: 3rem auto;
+  position: relative;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+textarea,
+input {
+  resize: none;
+}
+.input-btn {
+  position: absolute;
+  left: 89%;
+  top: 80%;
+  background-color: #f5ba13;
+  border: none;
+  font-size: 1.4rem;
+  color: #fff;
+  border-radius: 100%;
+  padding: 0.8rem;
+}
+.note.input:hover {
+  transform: scale(1);
+}
+.btn-detete {
 }
