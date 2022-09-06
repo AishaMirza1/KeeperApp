@@ -10,13 +10,28 @@ function App() {
       return [...prevValue, newNote];
     });
   }
+  function deleteNote(id) {
+    setnotes((prevValue) => {
+      return prevValue.filter((item, index) => {
+        return index !== id;
+      });
+    });
+  }
   return (
     <div className="container">
       <Header />
       <CreateArea onAdd={handleAdd} />
       <main className="notes-container">
         {notes.map((note, index) => {
-          return <Note key={index} title={note.title} text={note.note} />;
+          return (
+            <Note
+              key={index}
+              id={index}
+              title={note.title}
+              text={note.note}
+              onDelete={deleteNote}
+            />
+          );
         })}
       </main>
       <Footer />

@@ -36,13 +36,13 @@ code {
 }
 .notes-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .note {
-  width: 24rem;
+  width: 14rem;
   padding: 10px;
   margin: 20px 40px;
   border-radius: 5px;
@@ -105,4 +105,9 @@ input {
   transform: scale(1);
 }
 .btn-detete {
+  border: none;
+  color: #f5ba13;
+  background: transparent;
+  margin-left: 70%;
+  font-weight: 600;
 }
