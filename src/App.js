@@ -18,7 +18,7 @@ function App() {
     });
   }
   return (
-    <div className="container">
+    <div className="container ">
       <Header />
       <CreateArea onAdd={handleAdd} />
       <main className="notes-container">
