@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/KeeperApp/static/css/main.750a3b4d.css",
-    "main.js": "/KeeperApp/static/js/main.548001f8.js",
+    "main.css": "/KeeperApp/static/css/main.1b7a8b25.css",
+    "main.js": "/KeeperApp/static/js/main.4724b141.js",
     "index.html": "/KeeperApp/index.html",
-    "main.750a3b4d.css.map": "/KeeperApp/static/css/main.750a3b4d.css.map",
-    "main.548001f8.js.map": "/KeeperApp/static/js/main.548001f8.js.map"
+    "main.1b7a8b25.css.map": "/KeeperApp/static/css/main.1b7a8b25.css.map",
+    "main.4724b141.js.map": "/KeeperApp/static/js/main.4724b141.js.map"
   },
   "entrypoints": [
-    "static/css/main.750a3b4d.css",
-    "static/js/main.548001f8.js"
+    "static/css/main.1b7a8b25.css",
+    "static/js/main.4724b141.js"
   ]
 }
